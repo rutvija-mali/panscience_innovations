@@ -8,10 +8,9 @@
 		<version>4.0.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>-1</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>-1</name>
+		<artifactId>documind</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<name>documind</name>
 	<description/>
 	<url/>
 	<licenses>
