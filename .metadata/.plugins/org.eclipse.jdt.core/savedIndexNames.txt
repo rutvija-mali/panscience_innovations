@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\rutvi\OneDrive\Desktop\cuvette-react\panscience_ai\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3943912467.index
+1755068205.index

@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Polished dark base */
+html,
+body {
+  background: #020617;
+  color: #e2e8f0;
+}
+
+/* Nicer scrollbars (Chromium) */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.18);
+  border-radius: 999px;
+  border: 2px solid rgba(2, 6, 23, 1);
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.28);
+}

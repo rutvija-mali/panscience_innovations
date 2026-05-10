@@ -1,0 +1,11 @@
+# Environment / secrets
+.env
+.env.*
+*.env
+*.env.*
+
+# Local Spring config overrides (keep application.properties committed)
+backend/src/main/resources/application-local.properties
+backend/src/main/resources/application-local.yml
+backend/src/main/resources/application-local.yaml
+
