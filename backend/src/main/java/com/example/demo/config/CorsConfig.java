@@ -10,7 +10,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class CorsConfig implements WebMvcConfigurer {
 
-	@Value("${app.cors.allowed-origins:http://localhost:5173}")
+	@Value("${app.cors.allowed-origins:http://localhost:5173,https://panscience-innovations.vercel.app}")
 	private String allowedOrigins;
 
 	@Override
@@ -21,7 +21,7 @@ public class CorsConfig implements WebMvcConfigurer {
 				.toArray(String[]::new);
 
 		registry.addMapping("/api/**")
-				.allowedOrigins(origins.length == 0 ? new String[] { "http://localhost:5173" } : origins)
+				.allowedOrigins(origins.length == 0 ? new String[] { "http://localhost:5173, https://panscience-innovations.vercel.app" } : origins)
 				.allowedMethods("GET", "POST", "OPTIONS")
 				.allowedHeaders("*");
 	}
