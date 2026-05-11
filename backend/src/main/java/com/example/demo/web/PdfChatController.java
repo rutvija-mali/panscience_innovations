@@ -16,7 +16,7 @@ import com.example.demo.service.GroqService;
 import com.example.demo.service.PdfExtractionService;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/")
 public class PdfChatController {
 
 	private final PdfExtractionService pdfExtractionService;

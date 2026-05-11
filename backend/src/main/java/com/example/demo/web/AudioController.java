@@ -14,7 +14,7 @@ import com.example.demo.service.DocumentStore;
 import com.example.demo.service.GroqTranscriptionService;
 
 @RestController
-@RequestMapping("/api/audio")
+@RequestMapping("/audio")
 public class AudioController {
 
 	private final GroqTranscriptionService transcriptionService;
