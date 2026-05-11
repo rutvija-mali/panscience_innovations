@@ -2,8 +2,7 @@ import { useMemo, useState } from 'react'
 import ChatComposer from './components/ChatComposer.jsx'
 import ChatPanel from './components/ChatPanel.jsx'
 import Sidebar from './components/Sidebar.jsx'
-
-const API = '/api'
+const API = import.meta.env.VITE_API_BASE_URL
 
 export default function App() {
   const [documentId, setDocumentId] = useState(null)
@@ -25,6 +24,7 @@ export default function App() {
   }, [documentId, textLength])
 
   async function uploadPdf(e) {
+    console.log(import.meta.env.VITE_API_BASE_URL)
     const file = e.target.files?.[0]
     e.target.value = ''
     if (!file) return
