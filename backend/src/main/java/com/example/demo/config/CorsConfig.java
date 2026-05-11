@@ -20,7 +20,7 @@ public class CorsConfig implements WebMvcConfigurer {
 				.filter(s -> !s.isBlank())
 				.toArray(String[]::new);
 
-		registry.addMapping("/api/**")
+		registry.addMapping("/**")
 				.allowedOrigins(origins.length == 0 ? new String[] { "http://localhost:5173, https://panscience-innovations.vercel.app" } : origins)
 				.allowedMethods("GET", "POST", "OPTIONS")
 				.allowedHeaders("*");
