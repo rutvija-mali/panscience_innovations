@@ -37,12 +37,9 @@ npm run dev
 
 Frontend runs on `http://localhost:5173` and proxies `/api` → `http://localhost:8080`.
 
-## Deploy (Vercel + Railway)
-- **Railway (backend)**: set env
-  - `GROQ_API_KEY=...`
-  - `CORS_ALLOWED_ORIGINS=https://YOUR_VERCEL_APP.vercel.app`
-- **Vercel (frontend)**: set env
-  - `VITE_API_BASE_URL=https://YOUR_RAILWAY_BACKEND.up.railway.app`
+## Deploy (Vercel + Render)
+link: https://panscience-innovations.vercel.app 
+
 
 ## API
 - **POST** `/api/upload` (multipart `file` = PDF) → `{ documentId, textLength }`
